@@ -7,6 +7,7 @@ import { AddTodo } from "./MyComponents/AddTodo";
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+
 function App() {
   let initTodo;
   if (localStorage.getItem("todos") === null) {
@@ -31,7 +32,7 @@ function App() {
       desc: desc,
     };
     setTodos([...todos, myTodo]);
-    console.log(myTodo);
+    //console.log(myTodo);
   };
 
 
